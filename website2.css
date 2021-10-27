@@ -1,0 +1,266 @@
+html{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+
+}
+body{
+    
+    margin: 77px;
+    background-image: url(https://jolly-kalam-23776e.netlify.app/restaurantwebsite/assets/images/topography.svg), linear-gradient( 101deg, #f93d66, #6d47d9);
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+ 
+ul{
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-gap: 10px; 
+    grid-template-areas: "list1 list1 list1 list1 list1";
+    /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+    list-style: none;
+}
+.navigation{
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li{
+    /* border: 2px solid transparent; */
+    background-color: #ffc600;
+    text-align:center;
+    padding: 1em 1em;
+    /* padding: 0.5em 4.4em 0.5em 4.3em; */
+    /* margin-right: 8px; */
+}
+.navigation li a{
+    /* justify-content: center; */
+    /* padding: 1em; */
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bolder;
+    
+    font-size: 20px;
+}
+#newtag{
+    display: none;
+}
+#drop{
+    background-color: #ffc600;
+    text-align: center;
+    padding: 9px 0px;
+    border: none;
+    width: fit-content;
+}
+#section-1{
+    margin-top: 2em;
+}
+
+.grid1{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "img1 img1 price1"
+    "img1 img1 price2";
+}
+
+.img1{
+    background-image: url("https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg");
+    min-height: 400px;
+    background-size: cover;
+    background-position:bottom right ;
+    grid-area: img1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+   /*align-items: baseline; */
+}
+.img1 h1, .img1 p{
+    background-color: #ffc600;
+    padding:0.5em;
+    width: fit-content;
+}
+.img h1{
+    font-size: 5em;
+}
+.img p{
+    font-size: 1em;
+}
+.price {
+   justify-content: center;
+  background-color: #ffc600;
+}
+
+.price h1{
+    font-size: 4em;
+    margin: 0;
+    font-weight: 400;
+}
+
+.price h1, .price p{
+    margin-top: 45px;
+    text-align:center;
+}
+
+.price p{
+    font-weight:bold;
+    margin: 0;
+}
+.price1{
+    grid-area: price1;
+}
+.price2{
+    grid-area: price2;
+}
+
+#sect-a{
+    margin-top: 2em;
+    display:grid;
+    grid-gap: 1em;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    /* grid-template-areas: "card1 card2 card3 card4"; */
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.card{
+    background-color: #fff;
+    padding: 15px;
+}
+.card p{
+    background-color: white;
+    color: rgba(0,0,0,0.5);
+    font-size: 15px;
+    margin: 0;
+}
+.card .icon{
+    font-size: 50px;
+}
+.card h3{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+#sect-b{
+    margin-top: 1.6em;
+    background-color: white;
+    display: flex;
+    padding: 3em;
+}
+.burger{
+    text-align: center;
+}
+.content p{
+    background-color: white;
+}
+.content{
+    margin-top: 24px;
+}
+.butn{
+    text-decoration: none;
+    color: black;
+    border: solid transparent;
+    background-color: #ffc600;
+    margin: 0;
+    padding: 5px;
+    font-weight: 400;
+}
+/*
+.heading{
+    text-align: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+     /*line-height: 11px;
+    height: 15px;
+    border-width: 9px;
+    
+}
+*/
+.heading{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+.em1{
+    background-image: linear-gradient(110deg,transparent,#ffc600);
+    margin-top: 25px;
+    height: 10px;
+    width: 40%;
+}
+
+.em3{
+    background-image: linear-gradient(244deg,transparent,#ffc600);
+    height: 10px;
+    width: 40%;
+    margin-top: 25px;
+}
+.em2 h2{
+    width: auto;
+    
+}
+.picture{
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    /* grid-template-areas:
+    "image1 image1 image1 image1 image1"
+    "image2 image2 image2 image2 image2"; */
+    
+                          
+}
+.image1 img, .image2 img{
+   width: 100%;
+   height: auto;
+}
+/* select {
+    font-size: 17px;
+    border-radius: 10px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background: #ffc600;
+    border: none;
+    width: 120px;
+} */
+
+.bottom{
+    margin-top: 26px;
+}
+ @media only screen and (max-width:775px){
+    .navigation{
+        display: none;
+    }
+    #newtag{
+        display: block;
+    }
+    #sect-b{
+        padding: 3em;
+        display: block;
+    }
+
+    .content{
+        margin-top: 24px;
+        text-align: center;
+    }
+    /* .grid1{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+        "img1 img1 "
+        "price1 price2";
+    } */
+
+    .grid1{
+    display: flex;
+   flex-direction: column;
+    }   
+    .price{
+        padding-bottom: 2em;
+    }
+}
